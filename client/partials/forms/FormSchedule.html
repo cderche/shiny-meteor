@@ -1,0 +1,71 @@
+<template name="FormSchedule">
+  <div class="form-group">
+
+
+  <!-- BEGIN DATEPICKER -->
+  <div class="row">
+      <div class="col-xs-3">
+          <label for="date" class="control-label">Date</label>
+      </div>
+      <div class="col-xs-9">
+          <div id="myDatepicker" class="input-group date">
+              <input type="text" class="form-control">
+              <span class="input-group-addon">
+                  <i class="fa fa-calendar"></i>
+              </span>
+          </div>
+      </div>
+  </div>
+  <!-- END DATEPICKER -->
+  <br>
+  <!-- BEGIN TIMEPICKER -->
+  <div class="row">
+      <div class="col-xs-3">
+          <label for="date" class="control-label">Time</label>
+      </div>
+      <div class="col-xs-9">
+          <div class="input-group bootstrap-timepicker">
+              <input id="timepicker" type="text" class="form-control">
+              <span class="input-group-addon">
+                  <i class="pg-clock"></i>
+              </span>
+          </div>
+      </div>
+  </div>
+  <!-- END TIMEPICKER -->
+  </div>
+
+  <div class="row form-group">
+      <div class="col-xs-3">
+        <label for="rule" class="control-label">Every</label>
+    </div>
+      <div class="col-xs-9">
+          <div class="radio radio-success">
+              <div class="row">
+                  <div class="col-xs-12">
+                      <input type="radio" checked="checked" value="0" name="rule" id="once">
+                      <label for="once">Once</label>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12">
+                      <input type="radio" value="1" name="rule" id="month">
+                      <label for="month">Month (-5%)</label>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12">
+                      <input type="radio" value="2" name="rule" id="2week">
+                      <label for="2week">Two Weeks (-10%)</label>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12">
+                      <input type="radio" value="3" name="rule" id="week">
+                      <label for="week">Week (-20%)</label>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</template>

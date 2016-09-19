@@ -1,0 +1,59 @@
+<template name="FormPayment">
+    <form role="form m-t-50">
+        <div class="padding-30 font-montserrat all-caps small no-margin hint-text bold">
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <p>
+                        1 rub will now be blocked on your card. We will unblock it once your card is checked.
+                    </p>
+
+                    <!-- BEGIN CARD NUMBER -->
+                    <div class="form-group form-group-default required">
+                        <label>Card Number</label>
+                        <input type="text" class="form-control" required="">
+                    </div>
+                    <!-- END CARD NUMBER -->
+
+                    <!-- BEGIN CARD NAME -->
+                    <div class="form-group form-group-default required">
+                        <label>Card Name</label>
+                        <input type="text" class="form-control" required="">
+                    </div>
+                    <!-- END CARD NAME -->
+
+                    <!-- BEGIN EXPIRY DATE & CCV -->
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="form-group-attached">
+                                <div class="row clearfix">
+                                    <div class="col-xs-6">
+                                        <div class="form-group form-group-default required">
+                                            <label>Month</label>
+                                            <input type="text" class="form-control" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="form-group form-group-default required">
+                                            <label>Year</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-xs-offset-3">
+                            <div class="form-group form-group-default required">
+                                <label>CCV</label>
+                                <input type="text" class="form-control" required="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END EXPIRY DATE & CODE -->
+
+                </div>
+            </div>
+
+        </div>
+    </form>
+</template>
