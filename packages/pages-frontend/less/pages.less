@@ -37,7 +37,11 @@ Generated From LESS
 // Responsive Util
 @import "responsive.import.less";
 
-.frontend {
-  @import "themes/shiny/theme.import.less";
+//Change your theme here
+@theme-name:"shiny";
+@direction: ltr; // use `rtl` or `ltr
+
+.theme {
+  @import "themes/@{theme-name}/theme.import.less";
 }
-.frontend();
+.theme();
