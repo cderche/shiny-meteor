@@ -1,0 +1,35 @@
+<template name="basketWizard">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs nav-tabs-linetriangle nav-tabs-separator">
+        <li class="active">
+            <a data-toggle="tab" href="#tab1">
+                <i class="fa fa-home tab-icon"></i>
+                <span>Clean</span>
+            </a>
+        </li>
+        <li>
+            <a data-toggle="tab" href="#tab2">
+                <i class="fa fa-map-marker tab-icon"></i>
+                <span>Location</span>
+            </a>
+        </li>
+        <li>
+            <a data-toggle="tab" href="#tab3">
+                <i class="fa fa-credit-card tab-icon"></i>
+                <span>Payment</span>
+            </a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active slide" id="tab1">
+          {{>formHome}}
+        </div>
+        <div class="tab-pane slide" id="tab2">
+          {{>formAddress}}
+        </div>
+        <div class="tab-pane slide" id="tab3">
+          {{>formPayment}}
+        </div>
+    </div>
+</template>

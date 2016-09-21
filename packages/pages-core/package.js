@@ -18,11 +18,9 @@ Package.describe({
 
 Package.onUse(function(api) {
     api.versionsFrom(['METEOR@0.9.0', 'METEOR@1.0','METEOR@1.2']);
-    api.use(['less','jquery','mizzao:bootstrap-3', 'momentjs:moment', 'bkruse:pace', 'gromo:jquery.scrollbar','cwaring:modernizr','fortawesome:fontawesome'], where);
+    api.use(['jquery','mizzao:bootstrap-3', 'momentjs:moment', 'bkruse:pace', 'gromo:jquery.scrollbar','cwaring:modernizr','fortawesome:fontawesome'], where);
     api.addFiles([
-      'js/pages.min.js',
-      'less/pages.less',
-    ], where);
+        'js/pages.min.js'], where);
 });
 
 Package.onTest(function(api) {

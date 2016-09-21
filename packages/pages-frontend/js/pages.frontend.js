@@ -191,7 +191,7 @@
     Pages.prototype.initAutoImageScroller = function() {
         //Scrolling Device Image : Showcase
         $('[data-pages="auto-scroll"]').each(function() {
-            var y = 0; 
+            var y = 0;
             var interval;
             var Screen = $(this).find('.iphone-border');
             var img = Screen.find('img');
@@ -357,31 +357,31 @@
     })
 
     $(window).on('load', function() {
-        $('[data-pages="header"]').each(function() {
+        $('[data-pages="defaultHeader"]').each(function() {
             var $header = $(this)
             $header.header($header.data())
         })
     });
 
-    $('[data-pages="header-toggle"]').on('click touchstart', function(e) {
+    $('[data-pages="defaultHeader-toggle"]').on('click touchstart', function(e) {
         e.preventDefault();
         var el = $(this)
 
         var header = el.attr('data-pages-element');
         $('body').toggleClass('menu-opened');
-        $('[data-pages="header-toggle"]').toggleClass('on');
+        $('[data-pages="defaultHeader-toggle"]').toggleClass('on');
 
     });
     $(window).on("resize", function() {
-        $('[data-pages="header"]').header('updateAffix');
+        $('[data-pages="defaultHeader"]').header('updateAffix');
     })
     $(window).on("scroll", function() {
         var ScrollTop = parseInt($(window).scrollTop());
         if (ScrollTop > 1) {
-            $('[data-pages="header"]').header('addMinimized');
+            $('[data-pages="defaultHeader"]').header('addMinimized');
         } else {
             if (ScrollTop < 10) {
-                $('[data-pages="header"]').header('removeMinized');
+                $('[data-pages="defaultHeader"]').header('removeMinized');
             }
         }
     });

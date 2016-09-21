@@ -1,0 +1,59 @@
+<template name="formAccount">
+    <div class="row">
+        <div class="col-xs-6">
+            <p>Account Details</p>
+        </div>
+        <div class="col-xs-6">
+            <div class="pull-right">
+                {{> loginButtons align="right"}}
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group-attached">
+        <div class="row clearfix">
+            <div class="col-sm-6">
+                <div class="form-group form-group-default required">
+                    <label>Email</label>
+                    <input type="email" class="form-control" required="">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group form-group-default required">
+                    <label>Telephone</label>
+                    <input type="text" class="form-control" required="">
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-sm-6">
+                <div class="form-group form-group-default required">
+                    <label>Password</label>
+                    <input type="password" class="form-control" required="">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group form-group-default required">
+                    <label>Password Confirmation</label>
+                    <input type="password" class="form-control" required="">
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-xs-12">
+                <div class="checkbox check-success checkbox-circle">
+                    <input type="checkbox" id="termsCheckbox">
+                    <label for="termsCheckbox">
+                        I agree to the
+                        <a href="#">Terms & Conditions</a>
+                    </label>
+                    <br>
+                    <br>
+                    <p class="small light">
+                        En cochant cette case, vous acceptez que vos numéros de carte bancaire soient conservés pendant le temps de votre inscription sur le site, pour permettre les règlements des services proposés sur le site.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

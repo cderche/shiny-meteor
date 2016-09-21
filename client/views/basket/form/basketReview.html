@@ -1,0 +1,73 @@
+<template name="basketReview">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="panel-title">Your Order</div>
+        </div>
+        <div class="panel-body">
+            <div class="font-montserrat all-caps small no-margin hint-text bold">
+                <!-- BEGIN DATE -->
+                <div class="row">
+                    <div class="col-xs-6">Date</div>
+                    <div class="col-xs-6 text-right">Mon 19 Sep</div>
+                </div>
+                <!-- END DATE -->
+
+                <!-- BEGIN TIME -->
+                <div class="row">
+                    <div class="col-xs-6">Time</div>
+                    <div class="col-xs-6 text-right">14:00</div>
+                </div>
+                <!-- END TIME -->
+
+                <!-- BEGIN RULE -->
+                <div class="row">
+                    <div class="col-xs-6">Recurrence</div>
+                    <div class="col-xs-6 text-right">Weekly</div>
+                </div>
+                <!-- END RULE -->
+
+                <!-- BEGIN BEDS -->
+                <div class="row">
+                    <div class="col-xs-6">Bedrooms</div>
+                    <div class="col-xs-6 text-right">1</div>
+                </div>
+                <!-- END BEDS -->
+
+                <!-- BEGIN BATHS -->
+                <div class="row">
+                    <div class="col-xs-6">Bathrooms</div>
+                    <div class="col-xs-6 text-right">1</div>
+                </div>
+                <!-- END BATHS -->
+
+                <!-- BEGIN OTHER -->
+                <div class="row">
+                    <div class="col-xs-6">Additional</div>
+                    <div class="col-xs-6 text-right">
+                        Ironing<br>
+                        Windows
+                    </div>
+                </div>
+                <!-- END OTHER -->
+
+                <br>
+
+                <!-- BEGIN DURATION -->
+                <div class="row">
+                    <div class="col-xs-6">DURATION</div>
+                    <div class="col-xs-6 text-right">~4 Hours</div>
+                </div>
+                <!-- END OTHER -->
+
+                <br>
+
+                {{>formDiscounts}}
+
+                <br>
+
+                {{>basketPrice}}
+            </div>
+        </div>
+    </div>
+
+</template>

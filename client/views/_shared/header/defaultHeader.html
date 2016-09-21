@@ -1,0 +1,20 @@
+<template name="defaultHeader">
+
+    <nav class="defaultHeader bg-header transparent-dark" data-pages="defaultHeader" data-pages-header="autoresize" data-pages-resize-class="light">
+        <div class="container relative">
+            <!-- BEGIN LEFT CONTENT -->
+            <div class="pull-left">
+                <!-- .defaultHeader-inner Allows to horizontally Align elements to the Center-->
+                <div class="defaultHeader-inner">
+                    <!-- BEGIN LOGO -->
+                    <a href="/">
+                        <img src="images/logo_dark.png" alt="Logo" style="height: 50px;"/>
+                    </a>
+                </div>
+            </div>
+
+            {{>menu}}
+        </div>
+    </nav>
+
+</template>
